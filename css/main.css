@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+h1, h2, dt {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+h1, h2 {
+  font-size: 1.8rem;
+}
+/** grid stuff **/
+
+main {
+  display: grid;
+  grid-template-areas:
+  "banner banner banner"
+  "box1 box2 box3";
+  gap: .75rem;
+}
+
+.banner, .caption {
+  grid-area: banner;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
