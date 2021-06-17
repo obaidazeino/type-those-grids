@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Merriweather", serif;
 }
 
 *, *::before, *::after {
@@ -14,25 +16,31 @@ body {
 }
 
 h1, h2, dt {
-  font-family: 'Merriweather', serif;
   font-style: italic;
 }
 
 h1, h2 {
   font-size: 1.8rem;
 }
+
 /** grid stuff **/
 
 main {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
   grid-template-areas:
-  "banner banner banner"
-  "box1 box2 box3";
+    "banner banner banner"
+    "box1 box2 box3";
   gap: .75rem;
 }
 
-.banner, .caption {
+.banner {
   grid-area: banner;
+}
+
+figcaption {
+  margin-top: -150px;
+  color: white;
 }
 
 .box1 {
