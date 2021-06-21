@@ -11,8 +11,8 @@ html {
 body {
   font-size: 1.5rem;
   line-height: 1.5;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, dt {
@@ -27,19 +27,36 @@ h1, h2 {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "banner banner banner"
     "box1 box2 box3";
   gap: .75rem;
+  max-width: 900px;
 }
 
 .banner {
   grid-area: banner;
+  max-width: inherit;
+}
+
+figure {
+  display: grid;
+  grid-template-areas:
+  "banner";
+  margin-left: 0;
+  padding: 1rem 0;
+  max-width: inherit;
+}
+
+img, figcaption {
+  align-self: center;
+  grid-area: banner;
+
 }
 
 figcaption {
-  margin-top: -150px;
+  margin-top: 30rem;
   color: white;
 }
 
@@ -53,4 +70,13 @@ figcaption {
 
 .box3 {
   grid-area: box3;
+}
+
+.box1, .box2, .box3 {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+h1, h2, p, dl {
+  padding-left: 1.5rem;
 }
