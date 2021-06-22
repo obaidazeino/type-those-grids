@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Merriweather", serif;
+  font-family: Merriweather, serif;
 }
 
 *, *::before, *::after {
@@ -32,7 +32,7 @@ h2 {
 }
 
 figcaption {
-  padding: 0.2rem 1.2rem;
+  padding: .2rem 1.2rem;
 }
 
 /** grid stuff **/
