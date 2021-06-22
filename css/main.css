@@ -10,7 +10,6 @@ html {
 
 body {
   font-size: 1.5rem;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +31,6 @@ main {
     "banner banner banner"
     "box1 box2 box3";
   gap: .75rem;
-  max-width: 900px;
 }
 
 .banner {
@@ -42,17 +40,16 @@ main {
 
 figure {
   display: grid;
-  grid-template-areas:
-  "banner";
+  grid-template-areas: "banner";
   margin-left: 0;
   padding: 1rem 0;
   max-width: inherit;
+  width: 100%;
 }
 
 img, figcaption {
   align-self: center;
   grid-area: banner;
-
 }
 
 figcaption {
